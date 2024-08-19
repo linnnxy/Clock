@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+  
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(111, 92, 198);
+  background: linear-gradient(
+    90deg,
+    rgb(76, 56, 163) 0%,
+    rgb(231, 231, 240) 100%
+  );
+  color: rgb(243, 240, 240);
+  position: relative;
+}
+.container {
+  width: 800px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.clock {
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+background-color: #d6cccc96;
+}
+.container::before{
+content:'';
+width: 100%;
+height: 100px;
+background-color: rgba(64, 62, 68, 0.603);
+border-radius: 10px;
+position: absolute;
+left:-10px;
+top: 10px;
+z-index: -1;
+}
+.clock span{
+font-size: 60px;
+width: 100px;
+display: inline-block;
+text-align: center;
+position: relative;
+}
+
+.clock span::after{
+  content:'';
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 20%;
+  transform: translate(-50px,);
+
+}
+#hrs::after{
+content:'HOURS';
+}
+#min::after{
+  content:'MINS';
+  left: 30%;
+  }
+  #sec::after{
+    content:'SEC';
+    left: 40%;
+    }
+    
+  
